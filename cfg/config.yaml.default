@@ -1,0 +1,3 @@
+webservaddr: ':6789'
+logpath: './logs/output.log'
+errpath: './logs/error.log'
