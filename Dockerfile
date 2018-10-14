@@ -14,8 +14,9 @@ COPY . $GOPATH/src/github.com/zhs007/tradingwebserv
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o tradingwebserv . \
     && mkdir /home/tradingwebserv \
     && mkdir /home/tradingwebserv/cfg \
-    && cp tradingwebserv /home/tradingwebserv/ \
-    && cp cfg/config.yaml.default /home/tradingwebserv/cfg/config.yaml
+    && cp ./tradingwebserv /home/tradingwebserv/ \
+    && cp ./cfg/config.yaml.default /home/tradingwebserv/cfg/config.yaml \
+    && cp -r ./www /home/tradingwebserv/www
 
 FROM scratch
 WORKDIR /home/tradingwebserv
