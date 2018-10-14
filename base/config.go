@@ -14,6 +14,7 @@ type Config struct {
 	LogPath     string
 	ErrPath     string
 	LogLevel    string
+	TradingDB   string
 }
 
 var cfg Config
