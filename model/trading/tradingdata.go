@@ -191,7 +191,7 @@ func FormatTradingData2PNLChart(loc *time.Location, rtd *tradingdb.ResultTrading
 
 			curval, curvol, avgprice = countAvgPrice(curval, curvol, avgprice, cv, cp)
 
-			lstval = append(lstval, curval+curvol*avgprice)
+			lstval = append(lstval, curval)
 		}
 	}
 
