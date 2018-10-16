@@ -125,7 +125,7 @@
     "proto",
     "trading"
   ]
-  revision = "d008a2ec531aaad66bb4a071c6efcbefae55f5bd"
+  revision = "040a3b2aefba464c13115b75863a2ca2a0bb0c86"
 
 [[projects]]
   name = "go.uber.org/atomic"
