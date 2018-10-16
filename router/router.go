@@ -20,6 +20,9 @@ func SetRouter() {
 
 	Router.GET("/api/getcandles", api.GetCandles())
 	Router.POST("/api/getcandles", api.GetCandles())
+	Router.GET("/api/gettradingdata", api.GetTradingData())
+	Router.POST("/api/gettradingdata", api.GetTradingData())
 
 	Router.GET("/charts/getcandles", charts.GetCandles())
+	Router.GET("/charts/getpnl", charts.GetPNL())
 }

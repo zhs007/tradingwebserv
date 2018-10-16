@@ -8,13 +8,10 @@ import (
 	"github.com/zhs007/tradingwebserv/model/trading"
 )
 
-// GetCandles -
-func GetCandles() gin.HandlerFunc {
+// GetPNL -
+func GetPNL() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		code := c.Request.FormValue("code")
 		name := c.Request.FormValue("name")
-		starttime := c.Request.FormValue("starttime")
-		endtime := c.Request.FormValue("endtime")
 		timezone := c.Request.FormValue("timezone")
 
 		loc, err := time.LoadLocation(timezone)
@@ -24,18 +21,18 @@ func GetCandles() gin.HandlerFunc {
 			return
 		}
 
-		ret, err := trading.GetCandles(c.Request.Context(), code, name, starttime, endtime, loc)
+		rtd, err := trading.GetTradingData(c.Request.Context(), name)
 		if err != nil {
 			c.String(http.StatusOK, err.Error())
 
 			return
 		}
 
-		strret, err := trading.FormatCandles2Arr(loc, ret)
+		lsttime, lstval := trading.FormatTradingData2PNLChart(loc, rtd)
 		if err != nil {
 			c.String(http.StatusOK, err.Error())
 		} else {
-			c.HTML(http.StatusOK, "getcandles.html", gin.H{"strjsondat": strret})
+			c.HTML(http.StatusOK, "getpnl.html", gin.H{"lsttime": lsttime, "lstval": lstval})
 		}
 
 	}
