@@ -100,7 +100,7 @@
     "graphqlext",
     "proto"
   ]
-  revision = "25166dac3d883b695af283db73310111b55e4f45"
+  revision = "206d9636ca05b51dae552d6d1134326c8897c2c4"
 
 [[projects]]
   branch = "master"
@@ -119,7 +119,7 @@
     "proto",
     "trading"
   ]
-  revision = "37a4eda27eb14397f98cec9695a8b7db593e7f13"
+  revision = "d008a2ec531aaad66bb4a071c6efcbefae55f5bd"
 
 [[projects]]
   name = "go.uber.org/atomic"
