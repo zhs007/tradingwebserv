@@ -73,7 +73,7 @@ func GetCandles(ctx context.Context, code string, name string, starttime string,
 		return "", err
 	}
 
-	queryReply, err := singleClient.Query(ctx, "tradingdb", strQueryCandles, string(buf))
+	queryReply, err := singleClient.Query(ctx, strQueryCandles, string(buf))
 	if err != nil {
 		return "", err
 	}
