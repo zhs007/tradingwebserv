@@ -96,61 +96,25 @@
   revision = "c88ee250d0221a57af388746f5cf03768c21d6e2"
 
 [[projects]]
-  branch = "master"
   name = "github.com/zhs007/ankadb"
   packages = [
     ".",
     "client",
     "database",
-    "err",
     "graphqlext",
     "proto"
   ]
-  revision = "206d9636ca05b51dae552d6d1134326c8897c2c4"
+  revision = "6a348878a57f9c437fc4e72d5e06652a8d642549"
+  version = "v0.2.3"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/zhs007/jarviscore"
-  packages = [
-    "err",
-    "log",
-    "proto"
-  ]
-  revision = "b7ac2693bb78a2e31eec405de650cfbb839a3e0d"
-
-[[projects]]
-  branch = "master"
   name = "github.com/zhs007/tradingdb"
   packages = [
     "proto",
     "trading"
   ]
-  revision = "39f04977f078f4c83c684ec71601a70cac2d53b1"
-
-[[projects]]
-  name = "go.uber.org/atomic"
-  packages = ["."]
-  revision = "4e336646b2ef9fc6e47be8e21594178f98e5ebcf"
-  version = "v1.2.0"
-
-[[projects]]
-  name = "go.uber.org/multierr"
-  packages = ["."]
-  revision = "3c4937480c32f4c13a875a1829af76c98ca3d40a"
-  version = "v1.1.0"
-
-[[projects]]
-  name = "go.uber.org/zap"
-  packages = [
-    ".",
-    "buffer",
-    "internal/bufferpool",
-    "internal/color",
-    "internal/exit",
-    "zapcore"
-  ]
-  revision = "ff33455a0e382e8a81d14dd7c922020b6b5e7982"
-  version = "v1.9.1"
+  revision = "fdd8eb9de542307c9cb4a53ef0830e9ae5d9bf4f"
+  version = "v0.2.2"
 
 [[projects]]
   branch = "master"
@@ -164,13 +128,13 @@
     "internal/timeseries",
     "trace"
   ]
-  revision = "49bb7cea24b1df9410e1712aa6433dae904ff66a"
+  revision = "9b4f9f5ad5197c79fd623a3638e70d8b26cef344"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "fa43e7bc11baaae89f3f902b2b4d832b68234844"
+  revision = "95b1ffbd15a57cc5abb3f04402b9e8ec0016a52c"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -197,7 +161,7 @@
   branch = "master"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
-  revision = "af9cb2a35e7f169ec875002c1829c9b315cddc04"
+  revision = "8b5d7a19e2d98fbad9aaf9c599776bf066d7c70f"
 
 [[projects]]
   name = "google.golang.org/grpc"
@@ -229,8 +193,8 @@
     "status",
     "tap"
   ]
-  revision = "8dea3dc473e90c8179e519d91302d0597c0ca1d1"
-  version = "v1.15.0"
+  revision = "2e463a05d100327ca47ac218281906921038fd95"
+  version = "v1.16.0"
 
 [[projects]]
   name = "gopkg.in/go-playground/validator.v8"
@@ -247,6 +211,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "c8cb0fa5e713c2d288415959e64c9c5d0afd539516212ac81da73fcaa8cbd13f"
+  inputs-digest = "e3e29045687fe0bc4ab687fa436227a428575b4cd6bbaa377a18eecc4a3b1e0f"
   solver-name = "gps-cdcl"
   solver-version = 1
